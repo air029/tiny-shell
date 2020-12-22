@@ -345,7 +345,7 @@ void do_bgfg(char **argv)
 
     if (id[0] == '%') //命令中给出的是job_id
     {
-        int jid = atoi(id[1]); //ascii to integer
+        int jid = atoi(&id[1]); //ascii to integer
         job = getjobjid(jobs, jid);
         if (job == NULL) //jobid对应的进程不存在
         {
