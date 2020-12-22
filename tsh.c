@@ -408,7 +408,7 @@ void waitfg(pid_t pid)
         //sleep(0);
         //如果是sleep(0)，则对于测试用例13
         //tsh不会进入sleeping状态，而是一直running
-        sleep(0.5);
+        sleep(1);
     }
 }
 
